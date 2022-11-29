@@ -28,7 +28,7 @@ export default function TopBar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Paper sx={{ position: 'fixed' }} elevation={2}>
+            <Paper sx={{ position: 'fixed', zIndex: 99 }} elevation={2}>
                 <AppBar>
                     <Toolbar>
                         <IconButton
@@ -79,6 +79,6 @@ export default function TopBar() {
                     </Toolbar>
                 </AppBar>
             </Paper>
-        </Box>
+        </Box >
     );
 }

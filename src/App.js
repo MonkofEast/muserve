@@ -1,14 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import * as React from 'react';
+import Paper from '@mui/material/Paper';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
+import ReserveCard from './components/card/ReserveCard.js';
+import ContentPaper from './components/content/ContentPaper.js'
+import ReserveButton from './components/Button/ReserveButton.js'
 import NaviBar from './components/bottomNavigation/NaviBar';
 import TopBar from './components/topBar/TopBar';
 import GoalCard from './components/card/GoalCard';
 import HallCard from './components/card/HallCard';
-import ReserveCard from './components/card/ReserveCard';
 import ReserveHallCard from './components/card/ReserveHallCard';
-import Paper from '@mui/material/Paper';
-import ContentPaper from './components/content/ContentPaper.js'
 
 function App() {
   return (
@@ -16,13 +21,30 @@ function App() {
       <TopBar />
 
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
+        <p>
+          Dashboard
+        </p>
+
+        <hr />
 
         <GoalCard />
+
+        <hr />
+
+        <ReserveButton />
+
+        <hr />
+
+        <ReserveCard />
+
+        <hr />
 
         <p>
           You got me!
         </p>
+
+
 
         {/* <a
           className="App-link"
