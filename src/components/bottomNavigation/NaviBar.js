@@ -8,6 +8,9 @@ import Paper from '@mui/material/Paper';
 import SettingsIcon from '@mui/icons-material/Settings';
 import MoodIcon from '@mui/icons-material/Mood';
 import FlagIcon from '@mui/icons-material/Flag';
+import HomeIcon from '@mui/icons-material/Home';
+
+import { useNavigate } from "react-router-dom";
 
 export default function NaviBar() {
     const [value, setValue] = React.useState('recents');
@@ -15,6 +18,28 @@ export default function NaviBar() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    let navigate = useNavigate();
+
+    const routeHome = () => {
+        let path = `/`;
+        navigate(path);
+    }
+
+    const routeMood = () => {
+        let path = `/mood`;
+        navigate(path);
+    }
+
+    const routeReserve = () => {
+        let path = `/reserve`;
+        navigate(path);
+    }
+
+    const routeGoal = () => {
+        let path = `/goal`;
+        navigate(path);
+    }
 
     return (
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={2}>
@@ -25,9 +50,26 @@ export default function NaviBar() {
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction label="Moods" icon={<MoodIcon />} />
-                <BottomNavigationAction label="Goals" icon={<FlagIcon />} />
-                <BottomNavigationAction label="Setting" icon={<SettingsIcon />} />
+
+                <BottomNavigationAction
+                    label="Home"
+                    icon={<HomeIcon />}
+                    onClick={routeHome}
+                />
+                <BottomNavigationAction
+                    label="Moods"
+                    icon={<MoodIcon />}
+                    onClick={routeMood}
+                />
+                <BottomNavigationAction
+                    label="Goals"
+                    icon={<FlagIcon />}
+                    onClick={routeGoal}
+                />
+                <BottomNavigationAction
+                    label="Setting"
+                    icon={<SettingsIcon />}
+                />
             </BottomNavigation>
         </Paper>
     );

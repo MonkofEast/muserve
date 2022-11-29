@@ -42,7 +42,7 @@ export default function GoalCard() {
         setExpanded(!expanded);
     };
     return (
-        <Card sx={{ minWidth: 340, maxWidth: 340 }}>
+        <Card sx={{ minWidth: 340, maxWidth: 340, maxHeight: 300 }}>
             <CardContent>
                 <Typography variant="h5" component="div">
                     Goal
@@ -53,10 +53,7 @@ export default function GoalCard() {
                 <GoalList />
             </CardContent>
 
-
-            {/* <MultiDial /> */}
-
-            <CardActions>
+            <CardActions className='mid-item'>
                 {/* <Button size="small">Learn More</Button> */}
                 <IconButton aria-label="add to favorites">
                     <FavoriteIcon />
@@ -74,6 +71,6 @@ export default function GoalCard() {
                     <ExpandMoreIcon />
                 </ExpandMore>
             </CardActions>
-        </Card>
+        </Card >
     );
 }

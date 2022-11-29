@@ -6,6 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import ReserveCard from './components/card/ReserveCard.js';
 import ContentPaper from './components/content/ContentPaper.js'
 import ReserveButton from './components/Button/ReserveButton.js'
@@ -15,48 +17,23 @@ import GoalCard from './components/card/GoalCard';
 import HallCard from './components/card/HallCard';
 import ReserveHallCard from './components/card/ReserveHallCard';
 
+import Home from './pages/home/Home';
+import MoodCalenderPage from './pages/moodCalender/MoodCalenderPage';
+import ReservationPage from './pages/reservation/ReservationPage';
+import GoalPage from './pages/goal/GoalPage';
+
 function App() {
   return (
-    <div className="App">
-      <TopBar />
-
-      <header className="App-header">
-
-        <p>
-          Dashboard
-        </p>
-
-        <hr />
-
-        <GoalCard />
-
-        <hr />
-
-        <ReserveButton />
-
-        <hr />
-
-        <ReserveCard />
-
-        <hr />
-
-        <p>
-          You got me!
-        </p>
-
-
-
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
-      <NaviBar />
-    </div>
+    <Router>
+      <div className='container'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mood" element={<MoodCalenderPage />} />
+          <Route path="/reserve" element={<ReservationPage />} />
+          <Route path="/goal" element={< GoalPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
