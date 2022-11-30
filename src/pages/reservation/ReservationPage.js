@@ -1,12 +1,9 @@
 import * as React from 'react';
 
-import ReserveCard from '../../components/card/ReserveCard.js';
-import ReserveButton from '../../components/Button/ReserveButton.js'
 import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
-import GoalCard from '../../components/card/GoalCard';
-
-import GoalListLong from '../../components/listShow/GoalList.js';
+import Checkboxes from '../../components/checkbox/Checkboxes';
+import Divider from '@mui/material/Divider';
 
 function ReservationPage() {
     return (
@@ -19,9 +16,11 @@ function ReservationPage() {
                     Reservation
                 </p>
 
-                <hr />
+                <Divider />
 
-                <GoalListLong />
+                <Checkboxes />
+
+                <Divider />
 
                 <p>
                     You got me!
@@ -29,7 +28,7 @@ function ReservationPage() {
             </header>
 
             <NaviBar />
-        </div>
+        </div >
     );
 }
 
