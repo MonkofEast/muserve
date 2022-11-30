@@ -41,11 +41,14 @@ export default function ComplexGrid() {
                             <Typography gutterBottom variant="subtitle1" component="div">
                                 Schapiro Hall
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                123 Amsterdam, Morningside
+                            <Typography gutterBottom variant="h6" component="div">
+                                Room 102
                             </Typography>
                             <Typography variant="body2" gutterBottom>
-                                Full resolution 1920x1080 • JPEG
+                                09:00 PM - 10:00 PM
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                123 Amsterdam, Morningside
                             </Typography>
                         </Grid>
                         <Grid item>
@@ -57,7 +60,7 @@ export default function ComplexGrid() {
                     </Grid>
                     {/* <Grid item>
                         <Typography variant="subtitle1" component="div">
-                            $19.00
+                            Room 1021
                         </Typography>
                     </Grid> */}
                 </Grid>

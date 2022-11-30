@@ -31,7 +31,7 @@ export default function ReserveFilterCard() {
                         </Typography>
 
                         <DTPicker />
-
+                        <hr />
                         <Checkboxes />
 
                         <hr />
