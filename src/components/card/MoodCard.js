@@ -2,14 +2,13 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
-import ReserveHallCard from './ReserveHallCard';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
-import Checkboxes from '../../components/checkbox/Checkboxes';
-import ReserveHallCardBig from './ReserveHallCardBig';
 import YMPicker from '../time/YMPicker';
+import MoodDateGrid from '../dateGrid/MoodDateGrid';
+import ReserveButton from '../buttons/ReserveButton';
+import { CardActions } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -24,7 +23,7 @@ export default function MoodCard() {
         <div>
             <Box sx={{ flexGrow: 1, minWidth: 340, maxWidth: 340 }}>
 
-                <Card sx={{ minWidth: 340, maxWidth: 340 }}>
+                <Card sx={{ minWidth: 340, maxWidth: 340, height: 700 }}>
                     <CardContent>
                         <Typography variant="h5" component="div">
                             Mood Calendar
@@ -34,26 +33,12 @@ export default function MoodCard() {
 
                         <YMPicker />
 
-                        <Grid
-                            container
-                            spacing={1}
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center"
-                        >
-                            <Grid xs={12}>
-                                <ReserveHallCardBig />
-                            </Grid>
-                            <Grid xs={12}>
-                                <ReserveHallCardBig />
-                            </Grid>
-                            <Grid xs={12}>
-                                <ReserveHallCardBig />
-                            </Grid>
-                            <Grid xs={12}>
-                                <ReserveHallCardBig />
-                            </Grid>
-                        </Grid>
+                        <MoodDateGrid />
+
+                        <Typography variant="h8" component="div">
+                            Feel like some practice?
+                        </Typography>
+                        <ReserveButton />
                     </CardContent>
                 </Card>
 
