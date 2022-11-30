@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
+import { pink } from '@mui/material/colors';
 import { DataGrid } from '@mui/x-data-grid';
 import IconButton from '@mui/material/IconButton';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
@@ -43,7 +43,7 @@ const RenderHappy = (props) => {
                     }
                 }}
             >
-                <InsertEmoticonIcon />
+                <InsertEmoticonIcon color='primary' />
             </IconButton>
         </strong>
     );
@@ -92,7 +92,7 @@ const RenderSad = (props) => {
                     }
                 }}
             >
-                <SentimentVeryDissatisfiedIcon />
+                <SentimentVeryDissatisfiedIcon color="secondary" />
             </IconButton>
         </strong>
     );
@@ -137,7 +137,7 @@ const RenderMid = (props) => {
                     }
                 }}
             >
-                <SentimentNeutralIcon />
+                <SentimentNeutralIcon color="action" />
             </IconButton>
         </strong>
     );
@@ -182,7 +182,7 @@ const RenderSuperSad = (props) => {
                     }
                 }}
             >
-                <SickIcon />
+                <SickIcon sx={{ color: pink[500] }} />
             </IconButton>
         </strong>
     );
@@ -227,7 +227,7 @@ const RenderSuperHappy = (props) => {
                     }
                 }}
             >
-                <FaceRetouchingNaturalIcon />
+                <FaceRetouchingNaturalIcon color="success" />
             </IconButton>
         </strong>
     );
