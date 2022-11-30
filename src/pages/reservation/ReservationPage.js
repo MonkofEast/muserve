@@ -4,6 +4,7 @@ import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
 import Checkboxes from '../../components/checkbox/Checkboxes';
 import Divider from '@mui/material/Divider';
+import ReserveFilterCard from '../../components/card/ReserveFilterCard';
 
 function ReservationPage() {
     return (
@@ -18,7 +19,7 @@ function ReservationPage() {
 
                 <Divider />
 
-                <Checkboxes />
+                <ReserveFilterCard />
 
                 <Divider />
 
