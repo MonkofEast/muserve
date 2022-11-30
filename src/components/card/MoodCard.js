@@ -7,8 +7,9 @@ import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import YMPicker from '../time/YMPicker';
 import MoodDateGrid from '../dateGrid/MoodDateGrid';
-import ReserveButton from '../buttons/ReserveButton';
+import ReserveButtonShort from '../buttons/ReserveButtonShort';
 import { CardActions } from '@mui/material';
+import MoodPracticeCard from './MoodPracticeCard';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,25 +24,21 @@ export default function MoodCard() {
         <div>
             <Box sx={{ flexGrow: 1, minWidth: 340, maxWidth: 340 }}>
 
-                <Card sx={{ minWidth: 340, maxWidth: 340, height: 700 }}>
+                <Card sx={{ minWidth: 340, maxWidth: 340, height: 530 }}>
                     <CardContent>
                         <Typography variant="h5" component="div">
                             Mood Calendar
                         </Typography>
-
                         <hr />
 
                         <YMPicker />
 
                         <MoodDateGrid />
-
-                        <Typography variant="h8" component="div">
-                            Feel like some practice?
-                        </Typography>
-                        <ReserveButton />
                     </CardContent>
                 </Card>
+                <hr />
 
+                <MoodPracticeCard />
             </Box>
         </div>
     );

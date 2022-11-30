@@ -46,7 +46,7 @@ export default function GoalCard() {
         <Card sx={{ minWidth: 340, maxWidth: 340, maxHeight: 700 }}>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    Goal
+                    Goals Here
                 </Typography>
 
                 <hr />

@@ -14,7 +14,7 @@ function GoalPage() {
             <header className="App-header">
 
                 <p>
-                    Goals
+                    Goal
                 </p>
 
                 <hr />
