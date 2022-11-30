@@ -1,20 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import ReserveCard from './components/card/ReserveCard.js';
-import ContentPaper from './components/content/ContentPaper.js'
-import NaviBar from './components/bottomNavigation/NaviBar';
-import TopBar from './components/topBar/TopBar';
-import GoalCard from './components/card/GoalCard';
-import HallCard from './components/card/HallCard';
-import ReserveHallCard from './components/card/ReserveHallCard';
 
 import Home from './pages/home/Home';
 import MoodCalendarPage from './pages/moodCalender/MoodCalendarPage';
