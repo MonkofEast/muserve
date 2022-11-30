@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import ReserveCard from './components/card/ReserveCard.js';
 import ContentPaper from './components/content/ContentPaper.js'
-import ReserveButton from './components/Button/ReserveButton.js'
 import NaviBar from './components/bottomNavigation/NaviBar';
 import TopBar from './components/topBar/TopBar';
 import GoalCard from './components/card/GoalCard';
