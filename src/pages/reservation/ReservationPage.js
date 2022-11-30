@@ -16,7 +16,7 @@ function ReservationPage() {
             <header className="App-header">
 
                 <p>
-                    Goal
+                    Reservation
                 </p>
 
                 <hr />

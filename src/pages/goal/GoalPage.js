@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import ReserveCard from '../../components/card/ReserveCard.js';
-import ReserveButton from '../../components/Button/ReserveButton.js'
 import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
-import GoalCard from '../../components/card/GoalCard';
+import GoalCardLong from '../../components/card/GoalCardLong.js';
+import Divider from '@mui/material/Divider';
+import MultiDial from '../../components/interaction/MultiDial';
 
 function GoalPage() {
     return (
@@ -14,28 +14,20 @@ function GoalPage() {
             <header className="App-header">
 
                 <p>
-                    Goal Page
+                    Goals
                 </p>
 
-                <hr />
+                <Divider />
 
-                <GoalCard />
-
-                <hr />
-
-                <ReserveButton />
-
-                <hr />
-
-                <ReserveCard />
-
-                <hr />
+                <GoalCardLong />
 
                 <p>
                     You got me!
                 </p>
             </header>
+
             <NaviBar />
+            <MultiDial />
         </div>
     );
 }

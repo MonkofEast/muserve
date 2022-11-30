@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import { Box } from '@mui/material';
 
-import './GoalList.css'
+import './GoalListLong.css'
 
 function refreshMessages() {
     const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
@@ -19,7 +19,7 @@ function refreshMessages() {
     );
 }
 
-export default function GoalList() {
+export default function GoalListLong() {
     const [value, setValue] = React.useState(0);
     const ref = React.useRef(null);
     const [messages, setMessages] = React.useState(() => refreshMessages());
@@ -32,9 +32,13 @@ export default function GoalList() {
     return (
         <Box sx={{
             pb: 7,
-            maxHeight: 10
+            Height: 300,
         }} ref={ref}>
-            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} className='scroll-container'>
+            <List sx={{
+                width: '100%',
+                maxWidth: 360,
+                bgcolor: 'background.paper',
+            }} className='scroll-container-long'>
                 {messages.map(({ primary, secondary, person, data }, index) => (
                     <ListItem button key={index + person}>
                         <ListItemAvatar>

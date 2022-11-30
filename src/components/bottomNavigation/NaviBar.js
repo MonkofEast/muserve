@@ -31,11 +31,6 @@ export default function NaviBar() {
         navigate(path);
     }
 
-    const routeReserve = () => {
-        let path = `/reserve`;
-        navigate(path);
-    }
-
     const routeGoal = () => {
         let path = `/goal`;
         navigate(path);
