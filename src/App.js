@@ -17,7 +17,7 @@ import HallCard from './components/card/HallCard';
 import ReserveHallCard from './components/card/ReserveHallCard';
 
 import Home from './pages/home/Home';
-import MoodCalenderPage from './pages/moodCalender/MoodCalenderPage';
+import MoodCalendarPage from './pages/moodCalender/MoodCalendarPage';
 import ReservationPage from './pages/reservation/ReservationPage';
 import GoalPage from './pages/goal/GoalPage';
 
@@ -27,7 +27,7 @@ function App() {
       <div className='container'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/mood" element={<MoodCalenderPage />} />
+          <Route path="/mood" element={<MoodCalendarPage />} />
           <Route path="/reserve" element={<ReservationPage />} />
           <Route path="/goal" element={< GoalPage />} />
         </Routes>

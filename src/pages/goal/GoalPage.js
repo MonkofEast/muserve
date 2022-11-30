@@ -17,7 +17,7 @@ function GoalPage() {
                     Goals
                 </p>
 
-                <Divider />
+                <hr />
 
                 <GoalCardLong />
 

@@ -17,7 +17,7 @@ function ReservationPage() {
                     Reservation
                 </p>
 
-                <Divider />
+                <hr />
 
                 <ReserveFilterCard />
 

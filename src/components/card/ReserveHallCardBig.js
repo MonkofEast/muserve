@@ -13,7 +13,7 @@ const Img = styled('img')({
     maxHeight: '100%',
 });
 
-export default function ComplexGrid() {
+export default function ReserveHallCardBig() {
     return (
         <Paper
             sx={{

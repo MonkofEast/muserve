@@ -9,6 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import MoodIcon from '@mui/icons-material/Mood';
 import FlagIcon from '@mui/icons-material/Flag';
 import HomeIcon from '@mui/icons-material/Home';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 
 import { useNavigate } from "react-router-dom";
 
@@ -36,6 +37,11 @@ export default function NaviBar() {
         navigate(path);
     }
 
+    const routeReserve = () => {
+        let path = `/reserve`;
+        navigate(path);
+    }
+
     return (
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={2}>
             <BottomNavigation
@@ -55,6 +61,11 @@ export default function NaviBar() {
                     label="Moods"
                     icon={<MoodIcon />}
                     onClick={routeMood}
+                />
+                <BottomNavigationAction
+                    label="Reserve"
+                    icon={<EventAvailableIcon />}
+                    onClick={routeReserve}
                 />
                 <BottomNavigationAction
                     label="Goals"
