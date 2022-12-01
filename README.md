@@ -1,3 +1,6 @@
 # See the demo in slack
 
-Clone and npm start should do the job.
+## How to run:
+- Clone this repo
+- `npm install`
+- `npm start`
