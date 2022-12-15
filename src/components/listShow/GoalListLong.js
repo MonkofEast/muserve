@@ -7,6 +7,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import { Box } from '@mui/material';
 
 import './GoalListLong.css'
@@ -42,7 +43,8 @@ export default function GoalListLong() {
                 {messages.map(({ primary, secondary, person, data }, index) => (
                     <ListItem button key={index + person}>
                         <ListItemAvatar>
-                            <Avatar alt="Profile Picture" src={person} />
+                            {/* <Avatar alt="Profile Picture" src={person} /> */}
+                            <TrackChangesIcon fontSize='large' />
                         </ListItemAvatar>
                         <ListItemText
                             primary={primary}
