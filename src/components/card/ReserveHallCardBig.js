@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const Img = styled('img')({
     margin: 'auto',
@@ -55,7 +56,7 @@ export default function ReserveHallCardBig() {
                             {/* <Typography sx={{ cursor: 'pointer' }} variant="body2">
                                 Confirm
                             </Typography> */}
-                            <Button variant="contained" sx={{ height: 25 }}>Confirm</Button>
+                            <Button variant="contained" sx={{ height: 25 }}>Cancel</Button>
                         </Grid>
                     </Grid>
                     {/* <Grid item>

@@ -15,7 +15,7 @@ const bull = (
     </Box>
 );
 
-const ConfirmCardSmall = (
+const card = (
     <React.Fragment>
         <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
