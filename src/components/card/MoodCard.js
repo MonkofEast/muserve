@@ -28,7 +28,7 @@ export default function MoodCard() {
                 <Card sx={{ minWidth: 340, maxWidth: 340, height: 530 }}>
                     <CardContent>
                         <Typography variant="h5" component="div">
-                            Mood Calendar
+                            Mood Tracker
                         </Typography>
 
                         <hr />

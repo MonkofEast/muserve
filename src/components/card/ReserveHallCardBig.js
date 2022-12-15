@@ -40,10 +40,13 @@ export default function ReserveHallCardBig() {
                     <Grid item xs container direction="column" spacing={2}>
                         <Grid item xs>
                             <Typography gutterBottom variant="subtitle1" component="div">
-                                Schapiro Hall
-                            </Typography>
-                            <Typography gutterBottom variant="h6" component="div">
+                                Schapiro Hall,
                                 Room 102
+                            </Typography>
+                            {/* <Typography gutterBottom variant="h6" component="div">
+                            </Typography> */}
+                            <Typography variant="body2" gutterBottom>
+                                With Piano
                             </Typography>
                             <Typography variant="body2" gutterBottom>
                                 09:00 PM - 10:00 PM
