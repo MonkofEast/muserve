@@ -36,7 +36,6 @@ function ComfirmationPage() {
             </header>
 
             <NaviBar />
-            <MultiDial />
         </div>
     );
 }

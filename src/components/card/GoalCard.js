@@ -9,6 +9,7 @@ import GoalList from '../listShow/GoalList.js'
 import MultiDial from '../interaction/MultiDial.js';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
+import AddIcon from '@mui/icons-material/Add';
 
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -56,7 +57,7 @@ export default function GoalCard() {
             <CardActions className='mid-item'>
                 {/* <Button size="small">Learn More</Button> */}
                 <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
+                    <AddIcon />
                 </IconButton>
                 <IconButton aria-label="share">
                     <ShareIcon />
