@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Checkboxes from '../../components/checkbox/Checkboxes';
 import ReserveHallCardBig from './ReserveHallCardBig';
 import DTPicker from '../time/DTPicker';
+import ConfirmHallCardBig from './ConfirmHallCardBig';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -40,7 +41,7 @@ export default function ReserveFilterCard() {
                             alignItems="center"
                         >
                             <Grid xs={12}>
-                                <ReserveHallCardBig />
+                                <ConfirmHallCardBig />
                             </Grid>
                         </Grid>
                     </CardContent>

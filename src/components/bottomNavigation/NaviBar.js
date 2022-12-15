@@ -50,6 +50,11 @@ export default function NaviBar() {
         navigate(path);
     }
 
+    const routeHall = () => {
+        let path = `/Hall`;
+        navigate(path);
+    }
+
     return (
         <Paper
             sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}

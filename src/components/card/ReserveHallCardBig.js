@@ -6,6 +6,16 @@ import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ReserveHall from '../content/ReserveHall';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+
+import { useNavigate } from "react-router-dom";
 
 const Img = styled('img')({
     margin: 'auto',
@@ -15,60 +25,34 @@ const Img = styled('img')({
 });
 
 export default function ReserveHallCardBig() {
+    let navigate = useNavigate();
+
+    const routeHall = () => {
+        let path = `/hall`;
+        navigate(path);
+    }
+
     return (
-        <Paper
-            sx={{
-                p: 2,
-                margin: 'auto',
-                maxWidth: 500,
-                flexGrow: 1,
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-            }}
-        >
-            <Grid
-                container
-                spacing={2}
-                direction="column"
+        <Box sx={{ flexGrow: 1 }}>
+            <Card
+                sx={{ maxWidth: 345 }}
+                variant="outlined"
+                onClick={routeHall}
             >
-                <Grid item>
-                    <ButtonBase >
-                        <Img alt="Schapiro" src="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg" />
-                    </ButtonBase>
-                </Grid>
-                <Grid item xs={12} sm container>
-                    <Grid item xs container direction="column" spacing={2}>
-                        <Grid item xs>
-                            <Typography gutterBottom variant="subtitle1" component="div">
-                                Schapiro Hall,
-                                Room 102
-                            </Typography>
-                            {/* <Typography gutterBottom variant="h6" component="div">
-                            </Typography> */}
-                            <Typography variant="body2" gutterBottom>
-                                With Piano
-                            </Typography>
-                            <Typography variant="body2" gutterBottom>
-                                09:00 PM - 10:00 PM
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                123 Amsterdam, Morningside
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            {/* <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                                Confirm
-                            </Typography> */}
-                            <Button variant="contained" sx={{ height: 25 }}>Cancel</Button>
-                        </Grid>
-                    </Grid>
-                    {/* <Grid item>
-                        <Typography variant="subtitle1" component="div">
-                            Room 1021
-                        </Typography>
-                    </Grid> */}
-                </Grid>
-            </Grid>
-        </Paper>
+
+                <CardMedia
+                    component="img"
+                    alt="Schapiro Hall"
+                    height="100"
+                    image="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        Schapiro
+                    </Typography>
+                    <ReserveHall />
+                </CardContent>
+            </Card>
+        </Box>
     );
 }
