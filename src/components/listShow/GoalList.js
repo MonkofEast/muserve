@@ -15,7 +15,7 @@ import './GoalList.css'
 function refreshMessages() {
     const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-    return Array.from(new Array(50)).map(
+    return Array.from(new Array(8)).map(
         () => messageExamples[getRandomInt(messageExamples.length)],
     );
 }

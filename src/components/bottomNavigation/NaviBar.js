@@ -12,6 +12,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 
 import { useNavigate } from "react-router-dom";
+import { blue, green } from '@mui/material/colors';
+import { color } from '@mui/system';
+import { withStyles } from '@mui/material';
 
 export default function NaviBar() {
     const [value, setValue] = React.useState('recents');
@@ -42,13 +45,27 @@ export default function NaviBar() {
         navigate(path);
     }
 
+    const routeConfirm = () => {
+        let path = `/confirm`;
+        navigate(path);
+    }
+
     return (
-        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={2}>
+        <Paper
+            sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+            elevation={2}
+            background-color='black'
+        >
             <BottomNavigation
                 showLabels
                 value={value}
                 onChange={(event, newValue) => {
                     setValue(newValue);
+                }}
+                sx={{
+                    "& .Mui-selected, .Mui-selected > svg": {
+                        color: '0d47a1'
+                    }
                 }}
             >
 
@@ -75,8 +92,15 @@ export default function NaviBar() {
                 <BottomNavigationAction
                     label="Setting"
                     icon={<SettingsIcon />}
+                    onClick={routeConfirm}
                 />
             </BottomNavigation>
         </Paper>
     );
 }
+
+const styles = {
+    root: {
+        color: "green"
+    },
+};
