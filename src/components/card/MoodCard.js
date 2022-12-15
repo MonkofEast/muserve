@@ -10,6 +10,7 @@ import MoodDateGrid from '../dateGrid/MoodDateGrid';
 import ReserveButtonShort from '../buttons/ReserveButtonShort';
 import { CardActions } from '@mui/material';
 import MoodPracticeCard from './MoodPracticeCard';
+import MoodToday from '../moodToday/MoodToday';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -29,6 +30,11 @@ export default function MoodCard() {
                         <Typography variant="h5" component="div">
                             Mood Calendar
                         </Typography>
+
+                        <hr />
+
+                        <MoodToday />
+
                         <hr />
 
                         <YMPicker />
