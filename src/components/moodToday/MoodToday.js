@@ -14,6 +14,8 @@ import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural
 import PropTypes from 'prop-types';
 import { pink } from '@mui/material/colors';
 
+import Typography from '@mui/material/Typography';
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -25,6 +27,11 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function MoodToday() {
     return (
         <Box sx={{ flexGrow: 1 }}>
+
+            <Typography variant="h6" component="div">
+                How did your practice go today?
+            </Typography>
+
             <Grid container spacing={3}>
                 <Grid xs>
                     <InsertEmoticonIcon color='primary' fontSize='large' />
