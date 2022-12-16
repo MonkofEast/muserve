@@ -108,25 +108,27 @@ export default function HallTab() {
 
             <TabPanel value={value} index={0}>
                 <SelectedInfo />
-                <hr />
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
             </TabPanel >
 
             <TabPanel value={value} index={1}>
+                <SelectedInfo />
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
             </TabPanel>
 
             <TabPanel value={value} index={2}>
+                <SelectedInfo />
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
             </TabPanel>
 
             <TabPanel value={value} index={3}>
+                <SelectedInfo />
                 <CardShow>
                     <TimeScroll />
                 </CardShow>

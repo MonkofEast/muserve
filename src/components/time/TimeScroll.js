@@ -13,12 +13,13 @@ class TimeScroll extends React.Component {
             <ScheduleSelector
                 selection={this.state.schedule}
                 numDays={4}
-                minTime={0}
-                maxTime={24}
+                minTime={6}
+                maxTime={23}
                 hourlyChunks={2}
                 onChange={this.handleChange}
                 startDate={new Date('Fri Nov 18 2022 17:57:06 GMT-0700 (PDT)')}
                 width='100%'
+                timeFormat='hh:mmA'
             />
         )
     }
