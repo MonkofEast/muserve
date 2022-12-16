@@ -12,8 +12,11 @@ export default function DropBox() {
     };
 
     return (
-        <FormControl sx={{ minWidth: 85, minHeight: 15, maxHeight: 15 }} size="small">
-            <InputLabel id="demo-select-small">Room</InputLabel>
+        <FormControl sx={{ width: 100, height: 60 }}>
+            <InputLabel id="demo-select-small">
+                Room
+            </InputLabel>
+
             <Select
                 labelId="demo-select-small"
                 id="demo-select-small"

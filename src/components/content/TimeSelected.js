@@ -24,11 +24,11 @@ export default function TimeSelected() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={1}>
-                <Grid xs>
+                <Grid display="flex" xs justifyContent="center" alignItems="center">
                     <DropBox />
                 </Grid>
 
-                <Grid xs>
+                <Grid display="flex" xs justifyContent="center" alignItems="center">
                     <Box sx={{ flexGrow: 1, }}>
                         <Grid container spacing={0} >
                             <Grid xs={2}>
@@ -65,7 +65,7 @@ export default function TimeSelected() {
                     </Box>
                 </Grid>
 
-                <Grid xs>
+                <Grid xs display="flex" justifyContent="center" alignItems="center">
                     <ConfirmButton />
                 </Grid>
             </Grid>

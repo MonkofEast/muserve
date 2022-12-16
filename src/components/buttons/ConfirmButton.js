@@ -7,7 +7,13 @@ export default function ConfirmButton() {
         <div>
             {/* <Stack spacing={2} direction="row"> */}
             {/* <Button variant="text">Confirm</Button> */}
-            < Button variant="contained" >
+            < Button
+                variant="contained"
+                sx={{
+                    width: 100, height: 60
+                }}
+                href='/confirm'
+            >
                 Confirm
             </Button >
             {/* <Button variant="outlined">Confirm</Button> */}
