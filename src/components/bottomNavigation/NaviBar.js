@@ -94,7 +94,6 @@ export default function NaviBar() {
                 <BottomNavigationAction
                     label="Setting"
                     icon={<SettingsIcon />}
-                    onClick={routeConfirm}
                 />
             </BottomNavigation>
         </Paper>
