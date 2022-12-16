@@ -3,13 +3,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import ReserveHallCard from './ReserveHallCard';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
-import Checkboxes from '../../components/checkbox/Checkboxes';
-import ReserveHallCardBig from './ReserveHallCardBig';
-import DTPicker from '../time/DTPicker';
 import ConfirmHallCardBig from './ConfirmHallCardBig';
 
 const Item = styled(Paper)(({ theme }) => ({

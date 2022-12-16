@@ -2,11 +2,9 @@ import * as React from 'react';
 
 import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
-import Divider from '@mui/material/Divider';
-import ReserveFilterCard from '../../components/card/ReserveFilterCard';
+import MoodCard from '../../components/card/MoodCard.js';
 
-
-function HallSelectedPage() {
+function MoodCalenderPage() {
     return (
         <div className="App">
             <TopBar />
@@ -14,23 +12,22 @@ function HallSelectedPage() {
             <header className="App-header">
 
                 <p>
-                    Hall Selected
+                    Mood
                 </p>
 
                 <hr />
 
-                <ReserveFilterCard />
+                <MoodCard />
 
-                <Divider />
+                <hr />
 
                 <p>
                     You got me!
                 </p>
             </header>
-
             <NaviBar />
-        </div >
+        </div>
     );
 }
 
-export default HallSelectedPage;
+export default MoodCalenderPage;

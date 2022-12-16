@@ -3,7 +3,6 @@ import * as React from 'react';
 import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
 import MoodCard from '../../components/card/MoodCard.js';
-import { Divider } from '@mui/material';
 
 function MoodCalenderPage() {
     return (

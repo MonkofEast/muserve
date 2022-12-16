@@ -7,8 +7,6 @@ import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import YMPicker from '../time/YMPicker';
 import MoodDateGrid from '../dateGrid/MoodDateGrid';
-import ReserveButtonShort from '../buttons/ReserveButtonShort';
-import { CardActions } from '@mui/material';
 import MoodPracticeCard from './MoodPracticeCard';
 import MoodToday from '../moodToday/MoodToday';
 
