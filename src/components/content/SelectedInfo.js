@@ -20,7 +20,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
 import { blue } from '@mui/material/colors';
-
+import { useNavigate } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -31,6 +31,13 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SelectedInfo() {
+    let navigate = useNavigate();
+
+    const routeReserve = () => {
+        let path = `/reserve`;
+        navigate(path);
+    }
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Card>
@@ -66,11 +73,11 @@ export default function SelectedInfo() {
                     </Grid>
 
                     <Grid xs={3}>
-                        <FilterAltIcon />
+                        <FilterAltIcon onClick={routeReserve} />
                         <Typography variant="body2" gutterBottom>
                             Reset
                         </Typography>
-                        <Typography variant="body2" gutterBottom>
+                        <Typography variant="body2" gutterBottom onClick={routeReserve}>
                             Filter
                         </Typography>
                     </Grid>

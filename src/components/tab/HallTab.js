@@ -154,6 +154,9 @@ export default function HallTab() {
 
             <TabPanel value={value} index={1}>
                 <SelectedInfo />
+                <CardShowSmall>
+                    <TimeSelected />
+                </CardShowSmall>
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
@@ -161,6 +164,9 @@ export default function HallTab() {
 
             <TabPanel value={value} index={2}>
                 <SelectedInfo />
+                <CardShowSmall>
+                    <TimeSelected />
+                </CardShowSmall>
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
@@ -168,6 +174,9 @@ export default function HallTab() {
 
             <TabPanel value={value} index={3}>
                 <SelectedInfo />
+                <CardShowSmall>
+                    <TimeSelected />
+                </CardShowSmall>
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
