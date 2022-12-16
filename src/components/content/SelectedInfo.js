@@ -38,10 +38,10 @@ export default function SelectedInfo() {
                     <Grid xs={3}>
                         <CalendarMonthIcon sx={{ color: blue[800] }} />
                         <Typography variant="body2" gutterBottom>
-                            Fri, Nov 4
+                            From Fri,
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                            2022
+                            11/4/2022
                         </Typography>
                     </Grid>
 
