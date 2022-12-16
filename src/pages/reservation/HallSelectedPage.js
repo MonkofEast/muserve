@@ -5,6 +5,7 @@ import TopBar from '../../components/topBar/TopBar';
 import MoodCard from '../../components/card/MoodCard.js';
 import TimeScroll from '../../components/time/TimeScroll';
 import HallTab from '../../components/tab/HallTab';
+import GoalCard from '../../components/card/GoalCard';
 
 function MoodCalenderPage() {
     return (
@@ -23,7 +24,7 @@ function MoodCalenderPage() {
 
                 <hr />
 
-                <MoodCard />
+                <GoalCard />
 
                 <hr />
 

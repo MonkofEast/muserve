@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import TimeScroll from '../time/TimeScroll';
 import { Card, CardContent } from '@mui/material';
 import Grid from '@mui/material';
+import SelectedInfo from '../content/SelectedInfo';
 
 import './HallTab.css'
 
@@ -22,8 +23,11 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                <Box sx={{
+                    minWidth: 340,
+                    maxWidth: 340,
+                }}>
+                    {children}
                 </Box>
             )}
         </div>
@@ -81,9 +85,12 @@ export default function HallTab() {
     };
 
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{
+            minWidth: 340,
+            maxWidth: 340,
+        }}>
 
-            <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+            <Box sx={{ bgcolor: 'background.paper' }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -100,6 +107,8 @@ export default function HallTab() {
             </Box>
 
             <TabPanel value={value} index={0}>
+                <SelectedInfo />
+                <hr />
                 <CardShow>
                     <TimeScroll />
                 </CardShow>
