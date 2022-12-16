@@ -1,0 +1,10 @@
+.scroll-container {
+    width: 320px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.mid-item {
+    align-items: center
+}
