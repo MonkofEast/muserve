@@ -58,6 +58,7 @@ function CardShow(props) {
                         maxWidth: 340,
                         minHeight: 400,
                     }}
+                    className='scroll-container'
                 >
                     <CardContent
                         className='scroll-container'
