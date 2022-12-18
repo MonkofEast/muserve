@@ -76,6 +76,11 @@ export default function NaviBar() {
                     icon={<HomeIcon />}
                     onClick={routeHome}
                 />
+                {/* <BottomNavigationAction
+                    label="Moods"
+                    icon={<MoodIcon />}
+                    onClick={routeMood}
+                /> */}
                 <BottomNavigationAction
                     label="Goals"
                     icon={<FlagIcon />}

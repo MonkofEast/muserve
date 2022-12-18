@@ -10,9 +10,28 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Paper from '@mui/material/Paper';
 
+import { useNavigate } from "react-router-dom";
+
 export default function TopBar() {
     const [auth, setAuth] = React.useState(true);
     const [anchorEl, setAnchorEl] = React.useState(null);
+
+    let navigate = useNavigate();
+
+    const routeHome = () => {
+        let path = `/`;
+        navigate(path);
+    }
+
+    const routeGoal = () => {
+        let path = `/goal`;
+        navigate(path);
+    }
+
+    const routeReserve = () => {
+        let path = `/reserve`;
+        navigate(path);
+    }
 
     const handleChange = (event) => {
         setAuth(event.target.checked);
@@ -71,8 +90,9 @@ export default function TopBar() {
                                     open={Boolean(anchorEl)}
                                     onClose={handleClose}
                                 >
-                                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                                    <MenuItem onClick={routeHome}>Home</MenuItem>
+                                    <MenuItem onClick={routeGoal}>Goal</MenuItem>
+                                    <MenuItem onClick={routeReserve}>Reserve</MenuItem>
                                 </Menu>
                             </div>
                         )}
