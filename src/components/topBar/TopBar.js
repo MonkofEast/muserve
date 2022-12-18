@@ -10,6 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Paper from '@mui/material/Paper';
 import MoodIcon from '@mui/icons-material/Mood';
+import FlagIcon from '@mui/icons-material/Flag';
 
 import { useNavigate } from "react-router-dom";
 
@@ -76,10 +77,10 @@ export default function TopBar() {
                                     aria-label="mood"
                                     aria-controls="menu-appbar"
                                     aria-haspopup="true"
-                                    onClick={routeMood}
+                                    onClick={routeGoal}
                                     color="inherit"
                                 >
-                                    <MoodIcon />
+                                    <FlagIcon />
                                 </IconButton>
                                 <Menu
                                     id="menu-appbar"
@@ -97,7 +98,7 @@ export default function TopBar() {
                                     onClose={handleClose}
                                 >
                                     <MenuItem onClick={routeHome}>Home</MenuItem>
-                                    <MenuItem onClick={routeGoal}>Goal</MenuItem>
+                                    <MenuItem onClick={routeMood}>Mood</MenuItem>
                                     <MenuItem onClick={routeReserve}>Reserve</MenuItem>
                                 </Menu>
                             </div>
