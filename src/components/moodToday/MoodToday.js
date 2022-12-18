@@ -28,9 +28,9 @@ export default function MoodToday() {
     return (
         <Box sx={{ flexGrow: 1 }}>
 
-            <Typography variant="h6" component="div">
+            {/* <Typography variant="h6" component="div">
                 How did your practice go today?
-            </Typography>
+            </Typography> */}
 
             <Grid container spacing={3}>
                 <Grid xs>
