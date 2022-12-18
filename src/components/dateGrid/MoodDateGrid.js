@@ -8,11 +8,28 @@ import SentimentNeutralIcon from '@mui/icons-material/SentimentNeutral';
 import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
 import SickIcon from '@mui/icons-material/Sick';
 import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
 
 const RenderHappy = (props) => {
     const { hasFocus, value } = props;
     const buttonElement = React.useRef(null);
     const rippleRef = React.useRef(null);
+
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleChange = (event) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     React.useLayoutEffect(() => {
         if (hasFocus) {
@@ -42,9 +59,31 @@ const RenderHappy = (props) => {
                         event.stopPropagation();
                     }
                 }}
+                onClick={handleMenu}
             >
                 <InsertEmoticonIcon color='primary' />
             </IconButton>
+            <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+            >
+                <MenuItem><FaceRetouchingNaturalIcon color="success" /></MenuItem>
+                <MenuItem><InsertEmoticonIcon color='primary' /></MenuItem>
+                <MenuItem><SentimentNeutralIcon color="action" /></MenuItem>
+                <MenuItem><SentimentVeryDissatisfiedIcon color="secondary" /></MenuItem>
+                <MenuItem><SickIcon sx={{ color: pink[500] }} /></MenuItem>
+            </Menu>
         </strong>
     );
 };
@@ -63,6 +102,21 @@ const RenderSad = (props) => {
     const buttonElement = React.useRef(null);
     const rippleRef = React.useRef(null);
 
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleChange = (event) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
     React.useLayoutEffect(() => {
         if (hasFocus) {
             const input = buttonElement.current?.querySelector('input');
@@ -91,9 +145,31 @@ const RenderSad = (props) => {
                         event.stopPropagation();
                     }
                 }}
+                onClick={handleMenu}
             >
                 <SentimentVeryDissatisfiedIcon color="secondary" />
             </IconButton>
+            <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+            >
+                <MenuItem><FaceRetouchingNaturalIcon color="success" /></MenuItem>
+                <MenuItem><InsertEmoticonIcon color='primary' /></MenuItem>
+                <MenuItem><SentimentNeutralIcon color="action" /></MenuItem>
+                <MenuItem><SentimentVeryDissatisfiedIcon color="secondary" /></MenuItem>
+                <MenuItem><SickIcon sx={{ color: pink[500] }} /></MenuItem>
+            </Menu>
         </strong>
     );
 };
@@ -108,6 +184,21 @@ const RenderMid = (props) => {
     const buttonElement = React.useRef(null);
     const rippleRef = React.useRef(null);
 
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleChange = (event) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
     React.useLayoutEffect(() => {
         if (hasFocus) {
             const input = buttonElement.current?.querySelector('input');
@@ -136,9 +227,31 @@ const RenderMid = (props) => {
                         event.stopPropagation();
                     }
                 }}
+                onClick={handleMenu}
             >
                 <SentimentNeutralIcon color="action" />
             </IconButton>
+            <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+            >
+                <MenuItem><FaceRetouchingNaturalIcon color="success" /></MenuItem>
+                <MenuItem><InsertEmoticonIcon color='primary' /></MenuItem>
+                <MenuItem><SentimentNeutralIcon color="action" /></MenuItem>
+                <MenuItem><SentimentVeryDissatisfiedIcon color="secondary" /></MenuItem>
+                <MenuItem><SickIcon sx={{ color: pink[500] }} /></MenuItem>
+            </Menu>
         </strong>
     );
 };
@@ -153,6 +266,21 @@ const RenderSuperSad = (props) => {
     const buttonElement = React.useRef(null);
     const rippleRef = React.useRef(null);
 
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleChange = (event) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
     React.useLayoutEffect(() => {
         if (hasFocus) {
             const input = buttonElement.current?.querySelector('input');
@@ -181,9 +309,31 @@ const RenderSuperSad = (props) => {
                         event.stopPropagation();
                     }
                 }}
+                onClick={handleMenu}
             >
                 <SickIcon sx={{ color: pink[500] }} />
             </IconButton>
+            <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+            >
+                <MenuItem><FaceRetouchingNaturalIcon color="success" /></MenuItem>
+                <MenuItem><InsertEmoticonIcon color='primary' /></MenuItem>
+                <MenuItem><SentimentNeutralIcon color="action" /></MenuItem>
+                <MenuItem><SentimentVeryDissatisfiedIcon color="secondary" /></MenuItem>
+                <MenuItem><SickIcon sx={{ color: pink[500] }} /></MenuItem>
+            </Menu>
         </strong>
     );
 };
@@ -198,6 +348,21 @@ const RenderSuperHappy = (props) => {
     const buttonElement = React.useRef(null);
     const rippleRef = React.useRef(null);
 
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleChange = (event) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
     React.useLayoutEffect(() => {
         if (hasFocus) {
             const input = buttonElement.current?.querySelector('input');
@@ -226,9 +391,31 @@ const RenderSuperHappy = (props) => {
                         event.stopPropagation();
                     }
                 }}
+                onClick={handleMenu}
             >
                 <FaceRetouchingNaturalIcon color="success" />
             </IconButton>
+            <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+            >
+                <MenuItem><FaceRetouchingNaturalIcon color="success" /></MenuItem>
+                <MenuItem><InsertEmoticonIcon color='primary' /></MenuItem>
+                <MenuItem><SentimentNeutralIcon color="action" /></MenuItem>
+                <MenuItem><SentimentVeryDissatisfiedIcon color="secondary" /></MenuItem>
+                <MenuItem><SickIcon sx={{ color: pink[500] }} /></MenuItem>
+            </Menu>
         </strong>
     );
 };

@@ -23,7 +23,7 @@ export default function MoodCard() {
         <div>
             <Box sx={{ flexGrow: 1, minWidth: 340, maxWidth: 340 }}>
 
-                <Card sx={{ minWidth: 340, maxWidth: 340, height: 560 }}>
+                <Card sx={{ minWidth: 340, maxWidth: 340, height: 530 }}>
                     <CardContent>
                         <Typography variant="h5" component="div">
                             Mood Tracker

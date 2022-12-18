@@ -34,13 +34,16 @@ export default function MoodToday() {
 
             <Grid container spacing={3}>
                 <Grid xs>
+                    <FaceRetouchingNaturalIcon color="success" fontSize='large' />
+                </Grid>
+                <Grid xs>
                     <InsertEmoticonIcon color='primary' fontSize='large' />
                 </Grid>
                 <Grid xs>
-                    <SentimentVeryDissatisfiedIcon color="secondary" fontSize='large' />
+                    <SentimentNeutralIcon color="action" fontSize='large' />
                 </Grid>
                 <Grid xs>
-                    <SentimentNeutralIcon color="action" fontSize='large' />
+                    <SentimentVeryDissatisfiedIcon color="secondary" fontSize='large' />
                 </Grid>
                 <Grid xs>
                     <SickIcon sx={{ color: pink[500] }} fontSize='large' />
