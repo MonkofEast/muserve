@@ -9,6 +9,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Paper from '@mui/material/Paper';
+import MoodIcon from '@mui/icons-material/Mood';
 
 import { useNavigate } from "react-router-dom";
 
@@ -20,6 +21,11 @@ export default function TopBar() {
 
     const routeHome = () => {
         let path = `/`;
+        navigate(path);
+    }
+
+    const routeMood = () => {
+        let path = `/mood`;
         navigate(path);
     }
 
@@ -70,10 +76,10 @@ export default function TopBar() {
                                     aria-label="account of current user"
                                     aria-controls="menu-appbar"
                                     aria-haspopup="true"
-                                    onClick={handleMenu}
+                                    onClick={routeMood}
                                     color="inherit"
                                 >
-                                    <AccountCircle />
+                                    <MoodIcon />
                                 </IconButton>
                                 <Menu
                                     id="menu-appbar"
