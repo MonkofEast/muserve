@@ -7,6 +7,10 @@ import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
+
+import AlarmOnIcon from '@mui/icons-material/AlarmOn';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
@@ -28,40 +32,51 @@ export default function ConfirmHallCardBig() {
         >
             <Grid
                 container
-                spacing={2}
+                spacing={1}
                 direction="column"
             >
-                <Grid item>
-                    <ButtonBase >
-                        <Img alt="Schapiro" src="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg" />
-                    </ButtonBase>
-                </Grid>
-                <Grid item xs={12} sm container>
-                    <Grid item xs container direction="column" spacing={2}>
-                        <Grid item xs>
-                            <Typography gutterBottom variant="subtitle1" component="div">
-                                Schapiro Hall,
-                                Room 102
-                            </Typography>
-                            {/* <Typography gutterBottom variant="h6" component="div">
-                            </Typography> */}
+                <Grid item xs={12} sm container rowSpacing={1}>
+                    <Grid container justifyContent="center" alignItems="center">
+                        <Grid item xs="auto" sx={{ paddingRight: 1 }} >
+                            <FmdGoodIcon />
+                        </Grid>
+                        <Grid item xs="auto">
                             <Typography variant="body2" gutterBottom>
-                                With Piano
-                            </Typography>
-                            <Typography variant="body2" gutterBottom>
-                                09:00 PM - 10:00 PM
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                123 Amsterdam, Morningside
+                                211, Hogan
                             </Typography>
                         </Grid>
-                        <Grid item>
+                    </Grid>
+
+                    <Grid item spacing={2} sx={{ paddingBottom: 2 }}>
+                        <ButtonBase >
+                            <Img alt="Schapiro" src="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg" />
+                        </ButtonBase>
+                    </Grid>
+
+                    <Grid xs={1}>
+                        <CalendarMonthIcon />
+                    </Grid>
+                    <Grid xs={5}>
+                        <Typography variant="body2" gutterBottom>
+                            Fri, Nov 4, 2022
+                        </Typography>
+                    </Grid>
+                    <Grid xs={2}>
+                        <AlarmOnIcon />
+                    </Grid>
+                    <Grid xs={4}>
+                        <Typography variant="body2" gutterBottom>
+                            17:00 - 17:30
+                        </Typography>
+                    </Grid>
+                    <Grid container justifyContent="center" alignItems="center">
+                    <Grid item xs="auto">
                             {/* <Typography sx={{ cursor: 'pointer' }} variant="body2">
                                 Confirm
                             </Typography> */}
                             <Button variant="contained" sx={{ height: 25 }}>Cancel</Button>
-                        </Grid>
-                    </Grid>
+                        </Grid></Grid>
+
                     {/* <Grid item>
                         <Typography variant="subtitle1" component="div">
                             Room 1021

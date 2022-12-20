@@ -29,22 +29,15 @@ export default function ReserveHallCardSmall() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Card sx={{ maxWidth: 345 }}>
-
-                <CardMedia
-                    component="img"
-                    alt="Schapiro Hall"
-                    height="100"
-                    image="https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/Campus%20Life/About%20Columbia.png?itok=vxTMK6x0"
-                />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h7" component="div">
                         Upcoming Reservations
                     </Typography>
 
                     <hr></hr>
 
                     <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={2}>
+                        <Grid container spacing={1}>
                             <Grid xs={6}>
                                 <UpcommingReserveInfo />
                             </Grid>

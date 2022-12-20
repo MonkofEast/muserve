@@ -10,17 +10,59 @@ import ShareIcon from '@mui/icons-material/Share';
 import EditIcon from '@mui/icons-material/Edit';
 import AddIcon from '@mui/icons-material/Add';
 
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
 const actions = [
-    { icon: <AddIcon />, name: 'Add' },
-    { icon: <EditIcon />, name: 'Edit' },
-    // { icon: <PrintIcon />, name: 'Print' },
-    { icon: <ShareIcon />, name: 'Share' },
+   
 ];
 
 export default function MultiDial() {
+
+    const [open, setOpen] = React.useState(false);
+    const [openSpeedDial, setOpenSpeedDial] = React.useState(false);
+
+  const handleClickOpen = () => {
+    console.log("foooo");
+        setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setOpenSpeedDial(false);
+  };
     return (
         <Box sx={{ height: 50, transform: 'translateZ(0px)', flexGrow: 1, position: 'absolute', bottom: 16, right: 16 }}>
+            <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Add Goal</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Add a music practice goal to keep track of your progress.
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="New Goal"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Cancel</Button>
+          <Button onClick={handleClose}>Add</Button>
+        </DialogActions>
+      </Dialog>
+            
             <SpeedDial
+            open={openSpeedDial}
+                 onClick={handleClickOpen}
                 ariaLabel="Multi Dial"
                 icon={<SpeedDialIcon />}
                 sx={{ position: 'fixed', bottom: 70, right: 16 }}
@@ -32,7 +74,10 @@ export default function MultiDial() {
                         tooltipTitle={action.name}
                     />
                 ))}
+
+
             </SpeedDial>
+            
         </Box>
     );
 }

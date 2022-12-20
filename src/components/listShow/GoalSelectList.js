@@ -9,9 +9,9 @@ import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import { Box } from '@mui/material';
+import Switch from '@mui/material/Switch';
 
-
-import './GoalListLong.css'
+import './GoalList.css'
 
 function refreshMessages() {
     const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
@@ -21,7 +21,7 @@ function refreshMessages() {
     );
 }
 
-export default function GoalListLong() {
+export default function GoalSelectList() {
     const [value, setValue] = React.useState(0);
     const ref = React.useRef(null);
     const [messages, setMessages] = React.useState(() => refreshMessages());
@@ -34,35 +34,34 @@ export default function GoalListLong() {
     return (
         <Box sx={{
             pb: 7,
-            Height: 300,
+            maxHeight: 10
         }} ref={ref}>
-            <List sx={{
-                width: '100%',
-                maxWidth: 360,
-                bgcolor: 'background.paper',
-            }} className='scroll-container-long'>
+            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', paddingTop: 0, paddingBottom: 0 }} className='scroll-container'>
                 {messages.map(({ primary, secondary, person, data }, index) => (
                     <ListItem button key={index + person}>
-                        <ListItemAvatar>
-                            {/* <Avatar alt="Profile Picture" src={person} /> */}
+                        {/* <ListItemAvatar>
+                          
                             <TrackChangesIcon fontSize='large' />
-                        </ListItemAvatar>
+                            
+                            
+                        </ListItemAvatar> */}
                         <ListItemText
-                            primary={primary}
-                            secondary={
-                                <React.Fragment>
-                                    {data}
-                                    <tr></tr>
-                                    <Typography
-                                        sx={{ display: 'inline' }}
-                                        component="span"
-                                        variant="body2"
-                                        color="text.primary"
-                                    >
-                                        {secondary}
-                                    </Typography>
-                                </React.Fragment>}
+                            primary={secondary}
+                            // secondary={
+                            //     <React.Fragment>
+                            //         {/* {data} */}
+                            //         <tr></tr>
+                            //         <Typography
+                            //             sx={{ display: 'inline' }}
+                            //             component="span"
+                            //             variant="body2"
+                            //             color="text.primary"
+                            //         >
+                            //             {secondary}
+                            //         </Typography>
+                            //     </React.Fragment>}
                         />
+                        <Switch  />
                     </ListItem>
                 ))}
             </List>

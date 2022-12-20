@@ -6,10 +6,10 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import YMPicker from '../time/YMPicker';
-import MoodDateGrid from '../dateGrid/MoodDateGrid';
+import MoodDateGrid from '../dateGrid/MoodDateGrid_2';
 import MoodPracticeCard from './MoodPracticeCard';
 import MoodToday from '../moodToday/MoodToday';
-
+import Grid from '@mui/material/Unstable_Grid2';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -23,7 +23,7 @@ export default function MoodCard() {
         <div>
             <Box sx={{ flexGrow: 1, minWidth: 340, maxWidth: 340 }}>
 
-                <Card sx={{ minWidth: 340, maxWidth: 340, height: 530 }}>
+                <Card sx={{ minWidth: 340, maxWidth: 340, maxHeight: 360}}>
                     <CardContent>
                         <Typography variant="h5" component="div">
                             Mood Tracker
@@ -31,14 +31,24 @@ export default function MoodCard() {
 
                         <hr />
 
-                        <MoodToday />
+                        <Grid
+                            container
+                            spacing={0}
+                            direction="column"
+                            justifyContent="center"
+                            alignItems="center"
+                            rowSpacing={0}
+                        >
+                            <Grid xs={12}>
 
-                        <hr />
 
-                        <YMPicker />
 
-                        <MoodDateGrid />
+                                <MoodDateGrid /></Grid>
 
+                            {/* <Grid xs={12}>
+                                <MoodToday />
+                            </Grid> */}
+                        </Grid>
                     </CardContent>
                 </Card>
                 {/* <hr /> */}

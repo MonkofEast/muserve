@@ -28,7 +28,7 @@ export default function UpcommingReserveInfo() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Card>
-                <Grid container spacing={2}>
+                <Grid container rowSpacing={0}>
                     <Grid xs={2}>
                         <CalendarMonthIcon />
                     </Grid>
@@ -42,7 +42,7 @@ export default function UpcommingReserveInfo() {
                     </Grid>
                     <Grid xs={10}>
                         <Typography variant="body2" gutterBottom>
-                            5:00PM - 5:30PM
+                            17:00 - 17:30
                         </Typography>
                     </Grid>
                     <Grid xs={2}>
@@ -57,15 +57,15 @@ export default function UpcommingReserveInfo() {
                         <TrackChangesIcon />
                     </Grid>
                     <Grid xs={10}>
-                        <Typography variant="body2" gutterBottom>
-                            Concert on the Dec 12th
+                        <Typography variant="caption" gutterBottom>
+                            Dec 12th Concert
                         </Typography>
                     </Grid>
                 </Grid>
-                <CardActions>
+                {/* <CardActions>
                     <Button size="small">Checkin</Button>
                     <Button size="small">Cancel</Button>
-                </CardActions>
+                </CardActions> */}
             </Card>
         </Box>
     );

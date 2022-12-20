@@ -30,38 +30,38 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ReserveHall() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
-                <Grid xs={4}>
+        <Box sx={{ flexGrow: 1, padding:0 }}>
+            <Grid container spacing={1} rowSpacing={0}>
+                <Grid xs={2}>
                     <PianoIcon />
                 </Grid>
-                <Grid xs={8}>
-                    <Typography variant="body5" gutterBottom>
+                <Grid xs={10}>
+                    <Typography variant="body2" gutterBottom>
                         Pianos
                     </Typography>
                 </Grid>
-                <Grid xs={4}>
+                <Grid xs={2}>
                     <MeetingRoomIcon />
                 </Grid>
-                <Grid xs={8}>
-                    <Typography variant="body5" gutterBottom>
+                <Grid xs={10}>
+                    <Typography variant="body2" gutterBottom>
                         8 Rooms
                     </Typography>
                 </Grid>
-                <Grid xs={4}>
+                <Grid xs={2}>
                     <AccessTimeIcon />
                 </Grid>
-                <Grid xs={8}>
-                    <Typography variant="body5" gutterBottom>
+                <Grid xs={10}>
+                    <Typography variant="body2" gutterBottom>
                         24 Hours Access
                     </Typography>
                 </Grid>
-                <Grid xs={4}>
+                <Grid xs={2}>
                     <KeyIcon />
                 </Grid>
-                <Grid xs={8}>
-                    <Typography variant="body5" gutterBottom>
-                        Program With Your CUID
+                <Grid xs={10}>
+                    <Typography variant="body2" gutterBottom>
+                        Program Your CUID
                     </Typography>
                 </Grid>
             </Grid>

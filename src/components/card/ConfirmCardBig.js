@@ -7,6 +7,7 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import ConfirmHallCardBig from './ConfirmHallCardBig';
+import GoalSelectCard from '../../components/card/GoalSelectCard';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -37,7 +38,13 @@ export default function ReserveFilterCard() {
                             alignItems="center"
                         >
                             <Grid xs={12}>
+                                
                                 <ConfirmHallCardBig />
+                            </Grid>
+
+                            <Grid xs={12}>
+                                
+                                <GoalSelectCard />
                             </Grid>
                         </Grid>
                     </CardContent>

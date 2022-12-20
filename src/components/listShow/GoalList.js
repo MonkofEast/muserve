@@ -35,28 +35,28 @@ export default function GoalList() {
             pb: 7,
             maxHeight: 10
         }} ref={ref}>
-            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} className='scroll-container'>
+            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', paddingTop: 0, paddingBottom: 0 }} className='scroll-container'>
                 {messages.map(({ primary, secondary, person, data }, index) => (
                     <ListItem button key={index + person}>
                         <ListItemAvatar>
                             {/* <Avatar alt="Profile Picture" src={person} /> */}
-                            <TrackChangesIcon fontSize='large' />
+                            <TrackChangesIcon fontSize='medium' />
                         </ListItemAvatar>
                         <ListItemText
-                            primary={primary}
-                            secondary={
-                                <React.Fragment>
-                                    {data}
-                                    <tr></tr>
-                                    <Typography
-                                        sx={{ display: 'inline' }}
-                                        component="span"
-                                        variant="body2"
-                                        color="text.primary"
-                                    >
-                                        {secondary}
-                                    </Typography>
-                                </React.Fragment>}
+                            primary={secondary}
+                            // secondary={
+                            //     <React.Fragment>
+                            //         {/* {data} */}
+                            //         <tr></tr>
+                            //         <Typography
+                            //             sx={{ display: 'inline' }}
+                            //             component="span"
+                            //             variant="body2"
+                            //             color="text.primary"
+                            //         >
+                            //             {secondary}
+                            //         </Typography>
+                            //     </React.Fragment>}
                         />
                     </ListItem>
                 ))}

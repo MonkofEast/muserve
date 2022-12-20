@@ -32,10 +32,8 @@ export default function MoodToday() {
                 How did your practice go today?
             </Typography> */}
 
-            <Grid container spacing={3}>
-                <Grid xs>
-                    <FaceRetouchingNaturalIcon color="success" fontSize='large' />
-                </Grid>
+            <Grid container spacing={1} rowSpacing={0} sx={{padding:0, paddingBottom:0, paddingTop:0}}>
+                
                 <Grid xs>
                     <InsertEmoticonIcon color='primary' fontSize='large' />
                 </Grid>
@@ -45,9 +43,7 @@ export default function MoodToday() {
                 <Grid xs>
                     <SentimentVeryDissatisfiedIcon color="secondary" fontSize='large' />
                 </Grid>
-                <Grid xs>
-                    <SickIcon sx={{ color: pink[500] }} fontSize='large' />
-                </Grid>
+                
             </Grid>
         </Box>
     );

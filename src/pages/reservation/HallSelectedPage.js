@@ -24,9 +24,9 @@ function MoodCalenderPage() {
 
                 <hr />
 
-                <GoalCard />
+                {/* <GoalCard />
 
-                <hr />
+                <hr /> */}
 
                 <p>
                     You got me!
