@@ -28,7 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-export default function ReserveHall() {
+export default function ReserveHallHogan() {
     return (
         <Box sx={{ flexGrow: 1, padding:0 }}>
             <Grid container spacing={1} rowSpacing={0}>
@@ -45,7 +45,7 @@ export default function ReserveHall() {
                 </Grid>
                 <Grid xs={10}>
                     <Typography variant="body2" gutterBottom>
-                        8 Rooms
+                        4 Rooms
                     </Typography>
                 </Grid>
                 <Grid xs={2}>
@@ -56,14 +56,7 @@ export default function ReserveHall() {
                         24 Hours Access
                     </Typography>
                 </Grid>
-                <Grid xs={2}>
-                    <KeyIcon />
-                </Grid>
-                <Grid xs={10}>
-                    <Typography variant="body2" gutterBottom>
-                        Program Your CUID
-                    </Typography>
-                </Grid>
+                
             </Grid>
         </Box>
     );

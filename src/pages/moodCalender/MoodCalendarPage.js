@@ -3,7 +3,7 @@ import * as React from 'react';
 import NaviBar from '../../components/bottomNavigation/NaviBar';
 import TopBar from '../../components/topBar/TopBar';
 import MoodCard from '../../components/card/MoodCard.js';
-import GoalCard from '../../components/card/GoalCard';
+import GoalCardWithMood from '../../components/card/GoalCardWithMood';
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -21,20 +21,20 @@ function MoodCalenderPage() {
 
                 <hr />
                 <Box sx={{ flexGrow: 1, minWidth: 340, maxWidth: 340 }}>
-                <Grid
-                            container
-                            spacing={1}
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center"
-                        >
-                            <Grid xs={12}>
-                <MoodCard />
-                </Grid>
-                <Grid xs={12}>
-                <GoalCard />
-                </Grid>
-                </Grid>
+                    <Grid
+                        container
+                        spacing={1}
+                        direction="column"
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        <Grid xs={12}>
+                            <MoodCard />
+                        </Grid>
+                        <Grid xs={12}>
+                            <GoalCardWithMood />
+                        </Grid>
+                    </Grid>
                 </Box>
                 <hr />
 

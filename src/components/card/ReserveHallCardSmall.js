@@ -6,7 +6,10 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
-import UpcommingReserveInfo from '../content/UpcommingReserveInfo';
+import UpcommingReserveInfoBroadway from '../content/UpcommingReserveInfoBroadway';
+import UpcommingReserveInfoEastCampus from '../content/UpcommingReserveInfoEastCampus';
+import UpcommingReserveInfoSchapiro from '../content/UpcommingReserveInfoSchapiro';
+import UpcommingReserveInfoHogan from '../content/UpcommingReserveInfoHogan';
 import Grid from '@mui/material/Unstable_Grid2';
 
 
@@ -39,17 +42,17 @@ export default function ReserveHallCardSmall() {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={1}>
                             <Grid xs={6}>
-                                <UpcommingReserveInfo />
+                                <UpcommingReserveInfoSchapiro />
                             </Grid>
                             <Grid xs={6}>
-                                <UpcommingReserveInfo />
+                                <UpcommingReserveInfoBroadway />
                             </Grid>
                             <Grid xs={6}>
-                                <UpcommingReserveInfo />
+                                <UpcommingReserveInfoHogan />
                             </Grid>
                             <Grid xs={6}>
 
-                                <UpcommingReserveInfo />
+                                <UpcommingReserveInfoEastCampus />
                             </Grid>
                         </Grid>
                     </Box>

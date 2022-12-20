@@ -24,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-export default function UpcommingReserveInfo() {
+export default function UpcommingReserveInfoBroadway() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Card>
@@ -34,7 +34,7 @@ export default function UpcommingReserveInfo() {
                     </Grid>
                     <Grid xs={10}>
                         <Typography variant="body2" gutterBottom>
-                            Fri, Nov 4, 2022
+                            Sat, Nov 5, 2022
                         </Typography>
                     </Grid>
                     <Grid xs={2}>
@@ -42,15 +42,15 @@ export default function UpcommingReserveInfo() {
                     </Grid>
                     <Grid xs={10}>
                         <Typography variant="body2" gutterBottom>
-                            17:00 - 17:30
+                            18:00 - 18:30
                         </Typography>
                     </Grid>
                     <Grid xs={2}>
                         <FmdGoodIcon />
                     </Grid>
                     <Grid xs={10}>
-                        <Typography variant="body2" gutterBottom>
-                            211, Hogan
+                        <Typography variant="caption" gutterBottom>
+                            310, Broadway H.
                         </Typography>
                     </Grid>
                     <Grid xs={2}>
@@ -58,7 +58,7 @@ export default function UpcommingReserveInfo() {
                     </Grid>
                     <Grid xs={10}>
                         <Typography variant="caption" gutterBottom>
-                            Dec 12th Concert
+                            Work on measures
                         </Typography>
                     </Grid>
                 </Grid>

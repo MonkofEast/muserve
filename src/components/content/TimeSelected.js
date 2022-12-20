@@ -47,7 +47,7 @@ export default function TimeSelected() {
                             </Grid>
                             <Grid xs={10}>
                                 <Typography sx={{ fontSize: 10 }} gutterBottom color="common.black">
-                                    9PM-10PM
+                                    17:00 -18:00
                                 </Typography>
                             </Grid>
                         </Grid>

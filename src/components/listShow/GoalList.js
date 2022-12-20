@@ -13,11 +13,12 @@ import { Box } from '@mui/material';
 import './GoalList.css'
 
 function refreshMessages() {
-    const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+    // const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-    return Array.from(new Array(8)).map(
-        () => messageExamples[getRandomInt(messageExamples.length)],
-    );
+    // return Array.from(new Array(8)).map(
+    //     () => messageExamples[getRandomInt(messageExamples.length)],
+    // );
+    return messageExamples;
 }
 
 export default function GoalList() {
@@ -42,7 +43,7 @@ export default function GoalList() {
                             {/* <Avatar alt="Profile Picture" src={person} /> */}
                             <TrackChangesIcon fontSize='medium' />
                         </ListItemAvatar>
-                        <ListItemText
+                        <ListItemText variant="body5"
                             primary={secondary}
                             // secondary={
                             //     <React.Fragment>
@@ -73,28 +74,31 @@ const messageExamples = [
         data: '2022/11/01',
     },
     {
+        primary: "Record",
+        secondary: 'Work on section in measures 3 to 10',
+        person: '/static/images/avatar/4.jpg',
+        data: '2022/11/04',
+    },
+    {
+        primary: 'Concert',
+        secondary: 'Concert on December 12th!',
+        person: '/static/images/avatar/3.jpg',
+        data: '2022/11/03',
+    },
+    {
         primary: '3h',
         secondary: `Practice for 3 hours a day`,
         person: '/static/images/avatar/1.jpg',
         data: '2022/11/02',
     },
+    
+    
+    
     {
         primary: 'M',
-        secondary: 'Mediate before practice?',
+        secondary: 'Meditate before practice?',
         person: '/static/images/avatar/2.jpg',
         data: '2022/11/03',
-    },
-    {
-        primary: 'Concert',
-        secondary: 'Conert on December 12th!',
-        person: '/static/images/avatar/3.jpg',
-        data: '2022/11/03',
-    },
-    {
-        primary: "Record",
-        secondary: 'Work on section in measures 3 to 10',
-        person: '/static/images/avatar/4.jpg',
-        data: '2022/11/04',
     },
     {
         primary: 'Overtone',

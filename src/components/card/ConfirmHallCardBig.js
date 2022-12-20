@@ -7,7 +7,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
-
+import schaprio_pic from "../../img/SchapiroHall.jpeg"
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
@@ -42,14 +42,16 @@ export default function ConfirmHallCardBig() {
                         </Grid>
                         <Grid item xs="auto">
                             <Typography variant="body2" gutterBottom>
-                                211, Hogan
+                                211, Schapiro
                             </Typography>
                         </Grid>
                     </Grid>
 
                     <Grid item spacing={2} sx={{ paddingBottom: 2 }}>
                         <ButtonBase >
-                            <Img alt="Schapiro" src="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg" />
+                            <Img alt="Schapiro" src={schaprio_pic} />
+                            <Img alt="Schapiro" src={schaprio_pic} />
+                            <Img alt="Schapiro" src={schaprio_pic} />
                         </ButtonBase>
                     </Grid>
 
@@ -66,7 +68,7 @@ export default function ConfirmHallCardBig() {
                     </Grid>
                     <Grid xs={4}>
                         <Typography variant="body2" gutterBottom>
-                            17:00 - 17:30
+                            17:00 - 18:00
                         </Typography>
                     </Grid>
                     <Grid container justifyContent="center" alignItems="center">

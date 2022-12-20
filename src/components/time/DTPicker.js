@@ -10,7 +10,7 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 
 export default function DTPicker() {
-    const [value, setValue] = React.useState(dayjs('2014-08-18T21:11:54'));
+    const [value, setValue] = React.useState(dayjs('2022-09-04T14:11:54'));
 
     const handleChange = (newValue) => {
         setValue(newValue);

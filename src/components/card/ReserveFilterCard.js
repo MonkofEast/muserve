@@ -7,7 +7,10 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import Checkboxes from '../../components/checkbox/Checkboxes';
-import ReserveHallCardBig from './ReserveHallCardBig';
+import ReserveHallCardBigSchapiro from './ReserveHallCardBigSchapiro';
+import ReserveHallCardBigEC from './ReserveHallCardBigEC';
+import ReserveHallCardBigHogan from './ReserveHallCardBigHogan';
+import ReserveHallCardBigBroadway from './ReserveHallCardBigBroadway';
 import DTPicker from '../time/DTPicker';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -43,17 +46,20 @@ export default function ReserveFilterCard() {
                             alignItems="center"
                         >
                             <Grid xs={12}>
-                                <ReserveHallCardBig />
+                                <ReserveHallCardBigSchapiro />
+                                
                             </Grid>
                             <Grid xs={12}>
-                                <ReserveHallCardBig />
+                                <ReserveHallCardBigBroadway />
                             </Grid>
                             <Grid xs={12}>
-                                <ReserveHallCardBig />
+                                <ReserveHallCardBigHogan />
                             </Grid>
                             <Grid xs={12}>
-                                <ReserveHallCardBig />
+                                <ReserveHallCardBigEC />
                             </Grid>
+                            
+                          
                         </Grid>
                     </CardContent>
                 </Card>

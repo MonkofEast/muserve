@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import ReserveHall from '../content/ReserveHall';
+import ReserveHallSchapiro from '../content/ReserveHallSchapiro';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 
@@ -16,6 +16,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
 import { useNavigate } from "react-router-dom";
+
+import schaprio_pic from "../../img/SchapiroHall.jpeg"
 
 const Img = styled('img')({
     margin: 'auto',
@@ -32,7 +34,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-export default function ReserveHallCardBig() {
+export default function ReserveHallCardBigSchapiro() {
     let navigate = useNavigate();
 
     const routeHall = () => {
@@ -54,7 +56,7 @@ export default function ReserveHallCardBig() {
                             component="img"
                             alt="Schapiro Hall"
                             height="100%"
-                            image="https://www.housing.columbia.edu/sites/default/files/content/img/Buildings/Schapiro/SchapiroHall.jpg"
+                            image={schaprio_pic}
                         />
                         {/* <Item>xs=4</Item> */}
                     </Grid>
@@ -63,7 +65,7 @@ export default function ReserveHallCardBig() {
                             <Typography gutterBottom variant="h7" component="div" sx={{ padding: 0 }}>
                                 Schapiro
                             </Typography>
-                            <ReserveHall />
+                            <ReserveHallSchapiro />
                         </CardContent>
                     </Grid>
                 </Grid>
